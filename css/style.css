@@ -1,16 +1,30 @@
+:root {
+  --pink-400: hsl(0, 36%, 70%);
+  --red-500: hsl(0, 93%, 68%);
+  --gray-900: hsl(0, 6%, 24%);
+
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   min-height: 100vh;
   line-height: 1.5;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 input {
   font: inherit;
 }
