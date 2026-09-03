@@ -28,3 +28,11 @@ img {
 input {
   font: inherit;
 }
+
+/* HEADER */
+.header {
+  padding: var(--spacing-l);
+}
+.header img {
+  height: 24px;
+}
