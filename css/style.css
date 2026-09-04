@@ -46,14 +46,21 @@ input {
   color: var(--pink-400);
   margin: var(--spacing-xl) var(--spacing-l);
 }
+
+/*** HERO  ***/
+.hero img {
+  width: 100%;
+}
+
 /*** ARTICLE  ***/
 
 .heading {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 1;
   letter-spacing: 5px;
   margin-bottom: var(--spacing-m);
   font-weight: normal;
+  text-transform: uppercase;
 }
 .heading span {
   font-weight: bold;
@@ -62,3 +69,4 @@ input {
 .description {
   font-size: 0.875rem;
 }
+/*** FORM ***/
