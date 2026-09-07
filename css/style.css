@@ -176,9 +176,6 @@ footer {
   .hero img {
     height: 100%;
   }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
   article,
   form {
     max-width: 420px;
