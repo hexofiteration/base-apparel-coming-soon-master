@@ -132,3 +132,10 @@ button {
 button img {
   display: inline;
 }
+
+footer {
+  background: var(--gradient1);
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
