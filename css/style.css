@@ -77,7 +77,6 @@ input {
 /*** FORM ***/
 form {
   margin-top: var(--spacing-l);
-  margin-bottom: 5rem;
 }
 
 form,
@@ -137,7 +136,19 @@ button img {
 
 footer {
   background: var(--gradient1);
-  position: sticky;
+  position: fixed;
   width: 100%;
   bottom: 0;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  article,
+  form {
+    max-width: 450px;
+  }
 }
