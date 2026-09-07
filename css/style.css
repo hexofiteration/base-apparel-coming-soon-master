@@ -98,6 +98,9 @@ input:focus {
 input::placeholder {
   color: var(--pink-400);
 }
+input:focus:invalid {
+  border-color: var(--red-500);
+}
 input,
 .error-message {
   padding-left: calc(var(--spacing-m) + var(--spacing-s));
@@ -121,6 +124,9 @@ button {
   font-size: 0.75rem;
   float: left;
   color: var(--red-500);
+}
+.hide {
+  display: none;
 }
 button {
   width: 62px;

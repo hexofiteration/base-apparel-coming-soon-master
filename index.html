@@ -24,6 +24,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -44,22 +45,23 @@
           launch deals.
         </p>
       </article>
-      <form>
+      <form novalidate>
         <p class="form-group">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
-            pattern=".+@example\.com"
             required
           />
           <span>
-            <img class="error-icon" src="./images/icon-error.svg" alt="" />
+            <img class="error-icon hide" src="./images/icon-error.svg" alt="" />
           </span>
-          <span class="error-message">Please provide a valid email</span>
+          <span class="error-message hide">Please provide a valid email</span>
         </p>
-        <button><img src="./images/icon-arrow.svg" alt="" /></button>
+        <button type="submit">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
       </form>
     </main>
 
