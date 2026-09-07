@@ -98,6 +98,9 @@ input:focus {
 input::placeholder {
   color: var(--pink-400);
 }
+input:focus:valid {
+  border-color: hsl(120, 30%, 48%);
+}
 input:focus:invalid {
   border-color: var(--red-500);
 }
