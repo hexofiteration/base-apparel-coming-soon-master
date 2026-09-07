@@ -22,7 +22,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
-  line-height: 1.5;
 }
 
 img {
@@ -47,7 +46,8 @@ input {
 .main {
   text-align: center;
   color: var(--pink-400);
-  margin: var(--spacing-xl) var(--spacing-l);
+  margin: calc(var(--spacing-xl) + var(--spacing-m)) var(--spacing-l)
+    calc(var(--spacing-xl) + var(--spacing-xl)) var(--spacing-l);
 }
 
 /*** HERO  ***/
@@ -58,10 +58,10 @@ input {
 /*** ARTICLE  ***/
 
 .heading {
-  font-size: 3rem;
-  line-height: 1;
-  letter-spacing: 5px;
+  font-size: 2.625rem;
+  letter-spacing: 10px;
   margin-bottom: var(--spacing-m);
+  margin-top: var(--spacing-l);
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -71,6 +71,8 @@ input {
 }
 .description {
   font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 /*** FORM ***/
 form {
