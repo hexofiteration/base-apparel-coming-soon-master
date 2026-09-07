@@ -64,6 +64,7 @@ input {
   margin-top: var(--spacing-l);
   font-weight: normal;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 .heading span {
   font-weight: bold;
@@ -150,5 +151,48 @@ footer {
   article,
   form {
     max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    display: grid;
+
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      "header hero"
+      "main hero";
+  }
+  .header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: main;
+    text-align: left;
+  }
+  .hero img {
+    height: 100vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    grid-template-columns: 60% 40%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  article,
+  form {
+    max-width: 420px;
+  }
+
+  .header,
+  article,
+  form {
+    margin-left: calc(var(--spacing-xl) + 5vw);
   }
 }
