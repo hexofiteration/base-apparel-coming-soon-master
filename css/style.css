@@ -203,6 +203,7 @@ footer {
     grid-template-areas:
       "header hero"
       "main hero";
+    background: var(--gradient1);
   }
   .header img {
     height: 30px;
@@ -210,6 +211,7 @@ footer {
   .header {
     grid-area: header;
   }
+
   .main {
     grid-area: main;
     text-align: left;
